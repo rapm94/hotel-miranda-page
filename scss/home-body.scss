@@ -197,6 +197,10 @@ $miranda-black: #222222;
       color: $miranda-black;
       border: 2px solid #e6e6e6;
     }
+    &:active {
+      color: $miranda-black;
+      border: 2px solid #e6e6e6;
+    }
   }
 }
 
@@ -245,23 +249,47 @@ $miranda-black: #222222;
       margin: 20px 8px;
       .calltoaction-body-benefits-card{
           display: flex;
-       #taxi{
-        font-size: 80px;
-        color: $miranda-golden;
+          justify-content: center;
+          align-items: flex-end;
+          .calltoaction-body-benefits-card-circle{
+              border-radius: 50%;
+              background: white 0% 0% no-repeat padding-box;
+              padding: 17.5px;
+              box-shadow: 0px 8px 16px #BEAD8E33;
+              width: 70px;
+              height: 70px;
+              #taxi{
+                font-size: 30px;
+                color: $miranda-golden;
+          }
+          
+       
        }
        .calltoaction-body-benefits-text-container{
+           margin: 0px 20px;
            .calltoaction-body-benefits-card-title{
                 font-size: 20px;
                 color: $miranda-black;
                 font-weight: 100;
                 font-family: $elegant-font;
-                margin: 15px 15px;
+                margin: 15px 0px;
+                letter-spacing: -0.9px;
            }
            .calltoaction-body-benefits-card-description{
                 font-size: 8px;
                 color: $miranda-grey;
                 font-family: $modern-font;
            }
+       }
+       #negative-circle{
+           background: $miranda-golden 0% 0% no-repeat padding-box;
+           box-shadow: 0px 8px 16px #BEAD8E33;
+           width: 70px;
+           height: 70px;
+           #taxi{
+            font-size: 30px;
+            color: white;
+          }
        }
       }
   }

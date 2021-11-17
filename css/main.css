@@ -624,6 +624,10 @@ template {
   color: #222222;
   border: 2px solid #e6e6e6;
 }
+.rooms-section-button-container .rooms-section-button:active {
+  color: #222222;
+  border: 2px solid #e6e6e6;
+}
 
 .rooms-section-grid {
   background: #333333 0% 0% no-repeat padding-box;
@@ -673,22 +677,46 @@ template {
 }
 .calltoaction-section-body .calltoaction-body-benefits-card {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.calltoaction-section-body .calltoaction-body-benefits-card #taxi {
-  font-size: 80px;
+.calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-card-circle {
+  border-radius: 50%;
+  background: white 0% 0% no-repeat padding-box;
+  padding: 17.5px;
+  box-shadow: 0px 8px 16px #BEAD8E33;
+  width: 70px;
+  height: 70px;
+}
+.calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-card-circle #taxi {
+  font-size: 30px;
   color: #bead8e;
+}
+.calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-text-container {
+  margin: 0px 20px;
 }
 .calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-text-container .calltoaction-body-benefits-card-title {
   font-size: 20px;
   color: #222222;
   font-weight: 100;
   font-family: "OldStandardTT-Regular", serif;
-  margin: 15px 15px;
+  margin: 15px 0px;
+  letter-spacing: -0.9px;
 }
 .calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-text-container .calltoaction-body-benefits-card-description {
   font-size: 8px;
   color: #777777;
   font-family: "Archivo", sans-serif;
+}
+.calltoaction-section-body .calltoaction-body-benefits-card #negative-circle {
+  background: #bead8e 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 16px #BEAD8E33;
+  width: 70px;
+  height: 70px;
+}
+.calltoaction-section-body .calltoaction-body-benefits-card #negative-circle #taxi {
+  font-size: 30px;
+  color: white;
 }
 
 /*!
