@@ -1,0 +1,267 @@
+$elegant-font: 'OldStandardTT-Regular', serif;
+$modern-font: 'Archivo', sans-serif;
+$modern-font-bold: 'Archivo-Bold', sans-serif;
+$miranda-golden: #bead8e;
+$miranda-grey: #777777;
+$miranda-black: #222222; 
+
+.home-main {
+  height: 300px;
+  background-color: #e9e9e9;
+  width: 100%;
+
+  .home-main-text {
+    width: 55%;
+    padding-top: 40px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: 'Old Standard TT', serif;
+  }
+
+  .home-main-button-line {
+    padding-top: 120px;
+    margin-left: 20px;
+
+    #main-button-1 {
+      color: white;
+      font-size: 10px;
+      width: 120px;
+      height: 35px;
+      background: #bead8e 0% 0% no-repeat padding-box;
+      border: none;
+      box-shadow: 0px 14px 24px #bead8e66;
+      cursor: pointer;
+    }
+    #main-button-2 {
+      color: $miranda-grey;
+      font-size: 10px;
+      width: 120px;
+      height: 35px;
+      background: #bead8e00 0% 0% no-repeat padding-box;
+      border: 2px solid #e0e0e0;
+      cursor: pointer;
+    }
+  }
+}
+
+.book-panel {
+  margin-top: 10px;
+  text-align: center;
+  .check-in-line-panel {
+    text-align: center;
+    height: 70px;
+    background: $miranda-black 0% 0% no-repeat padding-box;
+    margin: 0px 20px 10px;
+    .check-in-panel {
+        width: 90px;
+      margin: 0 20px;
+      display: inline-block;
+      font-size: 10px;
+      padding-bottom: 40px;
+      border-bottom: 0.1px solid #bead8e;
+      justify-content: flex-start;
+      display: inline-flex;
+      cursor: pointer;
+    }
+    #check-in{
+        color: white;
+    }
+    #check-out{
+        color: white;
+    }
+  }
+  .book-button {
+    color: white;
+    font-size: 10px;
+    width: 120px;
+    height: 35px;
+    background: $miranda-golden 0% 0% no-repeat padding-box;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.section-header {
+  padding: 0px 12px;
+  margin: 10px 13px;
+  display: inline-flex;
+  .since {
+    font-size: 15px;
+    padding-right: 5px;
+    font-weight: bold;
+    color: $miranda-grey;
+  }
+  .year {
+    font-size: 15px;
+    font-weight: bold;
+    color: $miranda-golden;
+  }
+}
+.section-body {
+  padding: 0px 15px 25px;
+  text-align: center;
+  font-size: 28px;
+  font-family: $elegant-font;
+  letter-spacing: -0.9px;
+}
+.services-grid {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  grid-gap: 20px 20px;
+  .service-card {
+    background: white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #b8b8b81a;
+    width: 150px;
+    height: 150px;
+    border: none;
+    .service-icon {
+      width: 40px;
+      height: 40px;
+    }
+    .service-card-text {
+      padding-top: 5px;
+      color: $miranda-black;
+      font-size: 10px;
+    }
+    &:hover {
+      box-shadow: 5px 14px 24px #bead8e;
+    }
+    #diamond{
+        font-size: 40px;
+        color: $miranda-golden;
+    }
+    #coffee{
+        font-size: 40px;
+        color: $miranda-golden;
+    }
+    #location{
+        font-size: 40px;
+        color: $miranda-golden;
+    }
+    
+  }
+  .service-card-negative {
+    background: $miranda-golden 0% 0% no-repeat padding-box;
+    box-shadow: 0px 14px 24px #bead8e4d;
+    width: 150px;
+    height: 150px;
+    border: none;
+    .service-icon {
+      width: 40px;
+      height: 40px;
+    }
+    .service-card-text-negative {
+      padding-top: 5px;
+      color: white;
+      font-size: 10px;
+    }
+    &:hover {
+      box-shadow: 5px 14px 24px $miranda-golden;
+    }
+    #airplane{
+        font-size: 40px;
+        color: white;
+    }
+  }
+}
+
+.rooms-section-header {
+  margin: 30px 12px;
+
+  .rooms-section-title-small {
+    font-size: 15px;
+    color: $miranda-grey;
+    font-weight: 600;
+  }
+  .rooms-section-title-large {
+    font-size: 30px;
+    color: #222222;
+    font-family: $elegant-font;
+  }
+}
+.rooms-section-button-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 10px;
+  .rooms-section-button {
+    width: 75px;
+    height: 50px;
+    background: white 0% 0% no-repeat padding-box;
+    border: 2px solid white;
+    color: $miranda-grey;
+    font-size: 11px;
+    font-weight: bold;
+    &:hover {
+      color: $miranda-black;
+      border: 2px solid #e6e6e6;
+    }
+  }
+}
+
+.rooms-section-grid {
+  background: #333333 0% 0% no-repeat padding-box;
+  height: 400px;
+  width: 100%;
+}
+.calltoaction-section-header {
+  margin: 20px 8px;
+  .calltoaction-section-title-small {
+    font-size: 15px;
+    color: #777777;
+    font-family: $modern-font;
+    font-weight: bold;
+  }
+  .calltoaction-section-title-large {
+    font-size: 30px;
+    letter-spacing: -0.9px;
+    color: #222222;
+    font-family: $elegant-font;
+    font-weight: 100;
+  }
+  .calltoaction-section-div {
+    display: flex;
+    margin: 10px 8px;
+    .calltoaction-section-description {
+      font-size: 13px;
+      color: #777777;
+      font-family: $modern-font;
+    }
+    .calltoaction-section-div-button {
+      width: 150px;
+      height: 35px;
+      background: #000000 0% 0% no-repeat padding-box;
+      border: none;
+      cursor: pointer;
+      font-size: 9px;
+      color: white;
+      font-weight: 500;
+      letter-spacing: +0.8px;
+    }
+  }
+}
+  .calltoaction-section-body{
+      margin: 20px 8px;
+      .calltoaction-body-benefits-card{
+          display: flex;
+       #taxi{
+        font-size: 80px;
+        color: $miranda-golden;
+       }
+       .calltoaction-body-benefits-text-container{
+           .calltoaction-body-benefits-card-title{
+                font-size: 20px;
+                color: $miranda-black;
+                font-weight: 100;
+                font-family: $elegant-font;
+                margin: 15px 15px;
+           }
+           .calltoaction-body-benefits-card-description{
+                font-size: 8px;
+                color: $miranda-grey;
+                font-family: $modern-font;
+           }
+       }
+      }
+  }

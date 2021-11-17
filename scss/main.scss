@@ -1,0 +1,19 @@
+@import 'normalize';
+@import 'nav-bar';
+@import 'home-body';
+@import 'font-awesome';
+
+html, *{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Archivo', sans-serif;
+}
