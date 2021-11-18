@@ -256,13 +256,24 @@ $miranda-black: #222222;
     .calltoaction-body-benefits-card-circle {
       border-radius: 50%;
       background: white 0% 0% no-repeat padding-box;
-      padding: 17.5px;
       box-shadow: 0px 8px 16px #bead8e33;
+      padding: 17.5px;
       width: 70px;
       height: 70px;
-      #taxi {
-        font-size: 30px;
+      min-height: 70px;
+      min-width: 70px;
+      text-align: center;
+      justify-items: center;
+      .icon {
+        font-size: 32px;
         color: $miranda-golden;
+        margin: 0 auto;
+      }
+    }
+    #negative-circle {
+      background: $miranda-golden 0% 0% no-repeat padding-box;
+      .icon {
+        color: white;
       }
     }
     .calltoaction-body-benefits-text-container {
@@ -282,16 +293,6 @@ $miranda-black: #222222;
         text-align: justify;
         padding-right: 20px;
         line-height: 14px;
-      }
-    }
-    #negative-circle {
-      background: $miranda-golden 0% 0% no-repeat padding-box;
-      box-shadow: 0px 8px 16px #bead8e33;
-      width: 70px;
-      height: 70px;
-      #taxi {
-        font-size: 30px;
-        color: white;
       }
     }
   }
@@ -439,7 +440,7 @@ $miranda-black: #222222;
       font-family: $elegant-font;
     }
   }
-  .news-section-header-buttons-container{
+  .news-section-header-buttons-container {
     display: flex;
     justify-content: space-between;
     margin-right: 5px;
@@ -454,57 +455,61 @@ $miranda-black: #222222;
       border: none;
       margin: 10px 10px 0px 0px;
     }
-    #negative-header-button{
-        background: white 0% 0% no-repeat padding-box;
-        box-shadow: 0px 8px 16px #bead8e33;
-        width: 50px;
-        height: 50px;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        border: none;
-        margin: 10px 10px 0px 0px;
+    #negative-header-button {
+      background: white 0% 0% no-repeat padding-box;
+      box-shadow: 0px 8px 16px #bead8e33;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+      margin: 10px 10px 0px 0px;
     }
   }
 }
-.post-container{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    .post{
-      text-align: left;
-      max-width: 50%;
-      .post-image{
-        max-width: 100%;
-        display: block;
-      }
-      .post-data{
+.news-section-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  .news {
+    text-align: left;
+    max-width: 50%;
+    .news-image {
+      max-width: 100%;
+      display: block;
+    }
+    .news-data {
+      display: flex;
+      justify-content: space-around;
+      font-size: 10px;
+      .news-card-information {
+        margin: 15px 0px 0px 0px;
         display: flex;
-        justify-content: space-around;
-        font-size: 10px;
-        .post-card-data{
-          display: flex;
-          align-items: center;
-          color: #777777;
-          .news-feeds-icon{
-            padding: 4px;
-          }
+        align-items: center;
+        color: $miranda-golden;
+        font-family: $modern-font;
+        font-size: 8px;
+        .news-feed-icon {
+          padding: 4px;
+          font-size: 9px;
         }
       }
-      .post-title{
-        font-family: "Old Standard TT", serif;
-        font-size: 14px;
-        line-height: 19px;
-        color: #111111;
-        margin: 5px 0;
-        padding: 0 7px;
-      }
-      .post-description{
-        font-size: 12px;
-        line-height: 17px;
-        color: #777777;
-        margin: 5px 0;
-        padding: 0 7px;
-      }
+    }
+    .news-title {
+      font-family: $elegant-font;
+      font-size: 14px;
+      line-height: 19px;
+      color: $miranda-black;
+      margin: 5px 0;
+      padding: 0 7px;
+    }
+    .news-description {
+      font-size: 8.5px;
+      line-height: 17px;
+      color: $miranda-black;
+      margin: 5px 0;
+      padding: 0 7px;
     }
   }
+}

@@ -686,14 +686,25 @@ template {
 .calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-card-circle {
   border-radius: 50%;
   background: white 0% 0% no-repeat padding-box;
-  padding: 17.5px;
   box-shadow: 0px 8px 16px #bead8e33;
+  padding: 17.5px;
   width: 70px;
   height: 70px;
+  min-height: 70px;
+  min-width: 70px;
+  text-align: center;
+  justify-items: center;
 }
-.calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-card-circle #taxi {
-  font-size: 30px;
+.calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-card-circle .icon {
+  font-size: 32px;
   color: #bead8e;
+  margin: 0 auto;
+}
+.calltoaction-section-body .calltoaction-body-benefits-card #negative-circle {
+  background: #bead8e 0% 0% no-repeat padding-box;
+}
+.calltoaction-section-body .calltoaction-body-benefits-card #negative-circle .icon {
+  color: white;
 }
 .calltoaction-section-body .calltoaction-body-benefits-card .calltoaction-body-benefits-text-container {
   margin: 0px 20px;
@@ -713,16 +724,6 @@ template {
   text-align: justify;
   padding-right: 20px;
   line-height: 14px;
-}
-.calltoaction-section-body .calltoaction-body-benefits-card #negative-circle {
-  background: #bead8e 0% 0% no-repeat padding-box;
-  box-shadow: 0px 8px 16px #bead8e33;
-  width: 70px;
-  height: 70px;
-}
-.calltoaction-section-body .calltoaction-body-benefits-card #negative-circle #taxi {
-  font-size: 30px;
-  color: white;
 }
 
 .section-divider {
@@ -895,44 +896,48 @@ template {
   margin: 10px 10px 0px 0px;
 }
 
-.post-container {
+.news-section-container {
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
-.post-container .post {
+.news-section-container .news {
   text-align: left;
   max-width: 50%;
 }
-.post-container .post .post-image {
+.news-section-container .news .news-image {
   max-width: 100%;
   display: block;
 }
-.post-container .post .post-data {
+.news-section-container .news .news-data {
   display: flex;
   justify-content: space-around;
   font-size: 10px;
 }
-.post-container .post .post-data .post-card-data {
+.news-section-container .news .news-data .news-card-information {
+  margin: 15px 0px 0px 0px;
   display: flex;
   align-items: center;
-  color: #777777;
+  color: #bead8e;
+  font-family: "Archivo", sans-serif;
+  font-size: 8px;
 }
-.post-container .post .post-data .post-card-data .news-feeds-icon {
+.news-section-container .news .news-data .news-card-information .news-feed-icon {
   padding: 4px;
+  font-size: 9px;
 }
-.post-container .post .post-title {
-  font-family: "Old Standard TT", serif;
+.news-section-container .news .news-title {
+  font-family: "OldStandardTT-Regular", serif;
   font-size: 14px;
   line-height: 19px;
-  color: #111111;
+  color: #222222;
   margin: 5px 0;
   padding: 0 7px;
 }
-.post-container .post .post-description {
-  font-size: 12px;
+.news-section-container .news .news-description {
+  font-size: 8.5px;
   line-height: 17px;
-  color: #777777;
+  color: #222222;
   margin: 5px 0;
   padding: 0 7px;
 }
