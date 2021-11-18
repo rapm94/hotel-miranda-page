@@ -467,3 +467,44 @@ $miranda-black: #222222;
     }
   }
 }
+.post-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    .post{
+      text-align: left;
+      max-width: 50%;
+      .post-image{
+        max-width: 100%;
+        display: block;
+      }
+      .post-data{
+        display: flex;
+        justify-content: space-around;
+        font-size: 10px;
+        .post-card-data{
+          display: flex;
+          align-items: center;
+          color: #777777;
+          .news-feeds-icon{
+            padding: 4px;
+          }
+        }
+      }
+      .post-title{
+        font-family: "Old Standard TT", serif;
+        font-size: 14px;
+        line-height: 19px;
+        color: #111111;
+        margin: 5px 0;
+        padding: 0 7px;
+      }
+      .post-description{
+        font-size: 12px;
+        line-height: 17px;
+        color: #777777;
+        margin: 5px 0;
+        padding: 0 7px;
+      }
+    }
+  }
