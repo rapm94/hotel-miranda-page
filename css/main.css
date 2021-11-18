@@ -442,7 +442,7 @@ template {
   padding-top: 40px;
   padding-left: 30px;
   font-size: 30px;
-  font-family: "Old Standard TT", serif;
+  font-family: "OldStandardTT-Regular", serif;
 }
 .home-main .home-main-button-line {
   padding-top: 120px;
@@ -636,7 +636,7 @@ template {
 }
 
 .calltoaction-section-header {
-  margin: 20px 8px;
+  margin: 20px 10px;
 }
 .calltoaction-section-header .calltoaction-section-title-small {
   font-size: 15px;
@@ -653,15 +653,17 @@ template {
 }
 .calltoaction-section-header .calltoaction-section-div {
   display: flex;
-  margin: 10px 8px;
+  margin: 10px 0;
 }
 .calltoaction-section-header .calltoaction-section-div .calltoaction-section-description {
   font-size: 13px;
   color: #777777;
   font-family: "Archivo", sans-serif;
+  line-height: 20px;
+  width: 60%;
 }
 .calltoaction-section-header .calltoaction-section-div .calltoaction-section-div-button {
-  width: 150px;
+  width: 135px;
   height: 35px;
   background: #000000 0% 0% no-repeat padding-box;
   border: none;
@@ -670,10 +672,11 @@ template {
   color: white;
   font-weight: 500;
   letter-spacing: 0.8px;
+  margin-left: 10px;
 }
 
 .calltoaction-section-body {
-  margin: 20px 8px;
+  margin: 20px 10px;
 }
 .calltoaction-section-body .calltoaction-body-benefits-card {
   display: flex;
@@ -684,7 +687,7 @@ template {
   border-radius: 50%;
   background: white 0% 0% no-repeat padding-box;
   padding: 17.5px;
-  box-shadow: 0px 8px 16px #BEAD8E33;
+  box-shadow: 0px 8px 16px #bead8e33;
   width: 70px;
   height: 70px;
 }
@@ -707,16 +710,189 @@ template {
   font-size: 8px;
   color: #777777;
   font-family: "Archivo", sans-serif;
+  text-align: justify;
+  padding-right: 20px;
+  line-height: 14px;
 }
 .calltoaction-section-body .calltoaction-body-benefits-card #negative-circle {
   background: #bead8e 0% 0% no-repeat padding-box;
-  box-shadow: 0px 8px 16px #BEAD8E33;
+  box-shadow: 0px 8px 16px #bead8e33;
   width: 70px;
   height: 70px;
 }
 .calltoaction-section-body .calltoaction-body-benefits-card #negative-circle #taxi {
   font-size: 30px;
   color: white;
+}
+
+.section-divider {
+  width: 300px;
+  height: 10px;
+  background: #bead8e 0% 0% no-repeat padding-box;
+  margin: 15px auto;
+}
+
+.take-a-tour-section-header {
+  margin: 20px 10px;
+}
+.take-a-tour-section-header .take-a-tour-section-title-small {
+  font-size: 15px;
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+}
+.take-a-tour-section-header .take-a-tour-section-title-large {
+  font-size: 30px;
+  letter-spacing: -0.9px;
+  color: #222222;
+  font-family: "OldStandardTT-Regular", serif;
+  font-weight: 100;
+}
+.take-a-tour-section-header .take-a-tour-section-div {
+  display: flex;
+  margin: 10px 0px;
+}
+.take-a-tour-section-header .take-a-tour-section-div .take-a-tour-section-description {
+  font-size: 13px;
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  padding-right: 95px;
+  text-align: justify;
+  font-size: 8.5px;
+  line-height: 14px;
+}
+
+.testimonial-section {
+  margin: 20px 10px;
+}
+.testimonial-section .testimonial-section-small-title {
+  font-size: 15px;
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.testimonial-section .testimonial-section-large-title {
+  margin: 10px 0px;
+  font-size: 30px;
+  letter-spacing: -0.9px;
+  color: #222222;
+  font-family: "OldStandardTT-Regular", serif;
+  font-weight: 100;
+}
+.testimonial-section .testimonial-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.testimonial-section .testimonial-section-grid .testimonial-section-card {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: white 0% 0% no-repeat padding-box;
+  box-shadow: 0px 14px 24px #b8b8b81a;
+}
+.testimonial-section .testimonial-section-grid .testimonial-section-card .testimonial-section-card-image {
+  margin-top: 25px;
+}
+.testimonial-section .testimonial-section-grid .testimonial-section-card .testimonial-section-card-image .testimonial-image {
+  object-fit: cover;
+  width: 75px;
+  height: 75px;
+  border-radius: 550%;
+  background: white 0% 0% no-repeat padding-box;
+  margin: 10px;
+}
+.testimonial-section .testimonial-section-grid .testimonial-section-card .testimonial-section-card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+}
+.testimonial-section .testimonial-section-grid .testimonial-section-card .testimonial-section-card-text .testimonial-section-card-text-title {
+  font-size: 16px;
+  color: #222222;
+  font-family: "OldStandardTT-Regular", serif;
+}
+.testimonial-section .testimonial-section-grid .testimonial-section-card .testimonial-section-card-text .testimonial-section-card-text-job {
+  margin: 10px 0px 15px;
+  font-size: 10px;
+  color: #bead8e;
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+}
+.testimonial-section .testimonial-section-grid .testimonial-section-card .testimonial-section-card-text .testimonial-section-card-text-description {
+  font-size: 8px;
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  line-height: 20px;
+  text-align: center;
+  line-height: 12px;
+}
+
+.banner {
+  width: 100%;
+  height: 125px;
+  background-image: url("../img/masion-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .banner-text {
+  padding: 8px 8px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.582) no-repeat padding-box;
+  font-family: "OldStandardTT-Regular", serif;
+  line-height: 22px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.news-section .news-section-header {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.news-section .news-section-header .news-section-title-small {
+  font-size: 12px;
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.news-section .news-section-header .news-section-title-large {
+  font-size: 35px;
+  letter-spacing: -0.9px;
+  color: #222222;
+  font-family: "OldStandardTT-Regular", serif;
+}
+.news-section .news-section-header-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+.news-section .news-section-header-buttons-container .news-section-header-button {
+  background: #bead8e 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 16px #bead8e33;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  margin: 10px 10px 0px 0px;
+}
+.news-section .news-section-header-buttons-container #negative-header-button {
+  background: white 0% 0% no-repeat padding-box;
+  box-shadow: 0px 8px 16px #bead8e33;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  margin: 10px 10px 0px 0px;
 }
 
 /*!
