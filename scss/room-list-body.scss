@@ -1,0 +1,30 @@
+$elegant-font: 'OldStandardTT-Regular', serif;
+$modern-font: 'Archivo', sans-serif;
+$modern-font-bold: 'Archivo-Bold', sans-serif;
+$miranda-golden: #bead8e;
+$miranda-grey: #777777;
+$miranda-black: #222222;
+
+.header-section {
+  .header-section-container {
+      height: 200px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 30px;
+    .header-section-title-small {
+      font-size: 10px;
+      font-weight: bold;
+      color: $miranda-black;
+      margin-bottom: 20px;
+    }
+    .header-section-title-large {
+      font-size: 30px; 
+      font-weight: bold;
+      color: $miranda-black;
+      font-family: $elegant-font;
+    }
+  }
+}
