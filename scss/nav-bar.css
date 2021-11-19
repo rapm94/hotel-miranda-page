@@ -1,0 +1,128 @@
+.header {
+  margin: none;
+}
+
+.header .header-bar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-bar .hotel-miranda-title {
+  width: 50%;
+  padding-top: 12px;
+  margin-left: 20px;
+  letter-spacing: 2.6px;
+  color: #111111;
+  font-size: 20px;
+  opacity: 1;
+}
+
+.header .header-bar .burger {
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 30px;
+  color: #4B5C6B;
+}
+
+.header .drop-down-box {
+  display: none;
+  width: 90%;
+  background-color: #f7f9fa;
+  position: absolute;
+  right: 0px;
+  z-index: 0;
+  text-align: right;
+}
+
+.header .drop-down-box .drop-down-list {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.header .drop-down-box .drop-down-list .drop-down-element {
+  padding: 10px;
+  background: #c4bdaf no-repeat fixed center;
+  color: white;
+  padding-right: 40px;
+}
+
+.header .drop-down-box .drop-down-list .space {
+  height: 10px;
+}
+
+.header .drop-down-box .contact-and-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0px 20px;
+}
+
+.header .drop-down-box .contact-and-icon .drop-down-contact {
+  color: #40505c;
+  padding: 5px 20px;
+  font-size: 18px;
+}
+
+.header .drop-down-box .contact-and-icon .drop-down-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.header .drop-down-box .drop-down-box--visible {
+  display: block;
+  -webkit-animation: displayMenu 200ms linear;
+          animation: displayMenu 200ms linear;
+}
+
+@-webkit-keyframes displayMenu {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 70px;
+  }
+}
+
+@keyframes displayMenu {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 70px;
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+    .header {
+        .header-bar {
+            .hotel-miranda-title {
+              width: 100%;
+              margin-left: 0px;
+            }
+            .burger {
+              display: none;
+            }
+        }
+        .drop-down-box {
+          display: block;
+        }
+    }
+   
+ } */
+/*# sourceMappingURL=nav-bar.css.map */

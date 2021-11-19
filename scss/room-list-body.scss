@@ -6,7 +6,9 @@ $miranda-grey: #777777;
 $miranda-black: #222222;
 
 .header-section {
-  .header-section-container {
+  .header-background {
+      background-color: rgba(0, 0, 0, 0.623);
+    .header-section-container {
       height: 200px;
       width: 100%;
       display: flex;
@@ -14,17 +16,21 @@ $miranda-black: #222222;
       align-items: flex-start;
       justify-content: center;
       padding-left: 30px;
-    .header-section-title-small {
-      font-size: 10px;
-      font-weight: bold;
-      color: $miranda-black;
-      margin-bottom: 20px;
-    }
-    .header-section-title-large {
-      font-size: 30px; 
-      font-weight: bold;
-      color: $miranda-black;
-      font-family: $elegant-font;
+      background-image: url('../img/header-room-list.jpg');
+      background-size: cover;
+      background-position: center;
+      .header-section-title-small {
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+      }
+      .header-section-title-large {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        font-family: $elegant-font;
+      }
     }
   }
 }

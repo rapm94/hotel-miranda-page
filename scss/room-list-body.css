@@ -1,0 +1,40 @@
+.header-section .header-background {
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.header-section .header-background .header-section-container {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 30px;
+  background-image: url("../img/header-room-list.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-section .header-background .header-section-container .header-section-title-small {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.header-section .header-background .header-section-container .header-section-title-large {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-family: "OldStandardTT-Regular", serif;
+}
+/*# sourceMappingURL=room-list-body.css.map */
