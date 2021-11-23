@@ -17,14 +17,4 @@ function openDropdown(){
 openButton.addEventListener('click', openDropdown);
 
 
-// Automatically sliding carousel
 
-function autoSlide(){
-    let current = document.querySelector('.carousel__item--current');
-    let next = current.nextElementSibling;
-    if(next === null){
-        next = document.querySelector('.carousel__item');
-    }
-    current.classList.remove('carousel__item--current');
-    next.classList.add('carousel__item--current');
-}
