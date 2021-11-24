@@ -1171,7 +1171,7 @@ template {
   color: #222222;
   text-align: center;
   letter-spacing: -1.4px;
-  background-image: url("../Images/pexels-photo-2507007.jpg");
+  background-image: url("../img/photo-hotels.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -5489,7 +5489,7 @@ footer .logo-line #twitter {
 
 .ultimate-main {
   height: 150px;
-  background-image: url("../Images/pexels-cottonbro-5379062.jpg");
+  background-image: url("../img/photo-hotels.jpg");
   color: white;
 }
 

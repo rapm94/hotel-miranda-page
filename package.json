@@ -1,17 +1,22 @@
 {
-  "name": " ",
+  "homepage": "https://rapm94.github.io/proyecto-miranda-page",
+  "name": "miranda-hotel",
   "version": "0.0.1",
   "description": "",
   "keywords": "",
   "license": "",
-  "author": "",
+  "author": "Raúl Puigbó",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "dependencies": {}
 }
