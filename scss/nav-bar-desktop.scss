@@ -50,22 +50,31 @@ $miranda-black: #222222;
       justify-content: space-between;
       z-index: 2;
       background-color: transparent;
-      .drop-down-list {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        padding-left: 3%;
-        align-items: center;
-        background-color: transparent;
-        .drop-down-element {
-          padding-right: 25px;
-          padding-left: 0;
-          font-family: $modern-font;
-          font-weight: 600;
-          font-size: 16px;
-          letter-spacing: 0px;
-          color: white;
+      nav {
+        width: 35%;
+        .drop-down-list {
+          display: flex;
+          margin: 0;
+          padding: 0;
+          padding-left: 3%;
+          align-items: center;
           background-color: transparent;
+          .drop-down-element {
+            text-align: center;
+            width: 17%;
+            padding-right: 15px;
+            padding-left: 0;
+            font-family: $modern-font;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 0px;
+            color: white;
+            background-color: transparent;
+            .link {
+              color: white;
+              text-decoration: none;
+            }
+          }
         }
       }
       .contact-and-icon-container {
@@ -90,8 +99,9 @@ $miranda-black: #222222;
             min-width: 140px;
             padding: 0;
             font-size: 17px;
-            font-family: $elegant-font;;
+            font-family: $elegant-font;
             letter-spacing: 0px;
+            color: white;
           }
           .drop-down-icon {
             padding: 0;
