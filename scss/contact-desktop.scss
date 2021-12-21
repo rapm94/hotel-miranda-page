@@ -1,7 +1,6 @@
 $elegant-font: 'OldStandardTT-Regular', serif;
-$modern-font: $modern-font;
 $modern-font-bold: 'Archivo-Bold', sans-serif;
-$miranda-golden: #bead8e;
+$miranda-gold: #bead8e;
 $miranda-grey: #777777;
 $miranda-black: #222222;
 
@@ -62,7 +61,11 @@ $miranda-black: #222222;
     width: 1170px;
     height: 700px;
     margin: 0 0 130px;
+    #map {
+      height: 100%;
+    }
   }
+ 
   .contact-information-section {
     display: flex;
     flex-direction: row;

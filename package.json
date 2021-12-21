@@ -18,5 +18,8 @@
     "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.12.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^1.0.18",
+    "node-sass": "^7.0.0"
+  }
 }
